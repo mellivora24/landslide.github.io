@@ -113,14 +113,14 @@ function showInfor(name) {
                     marker = new google.maps.Marker({
                         position: position,
                         map: map,
-                        icon: "source\\1.ico",
+                        icon: "1.ico",
                         title: targetData.name
                     });    
                 } else {
                     marker = new google.maps.Marker({
                         position: position,
                         map: map,
-                        icon: "source\\2.ico",
+                        icon: "2.ico",
                         title: targetData.name
                     });    
                 }
