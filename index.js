@@ -96,11 +96,14 @@ function showInfor(name) {
             const targetData = data.find(item => item.name === name);
 
             if (targetData) {
+                let number = parseFloat(targetData.thoiGianMua);
+                let numbertosend = number.toFixed(2);
+                
                 displayInfor(targetData.name,
                     targetData.luongMua,
                     targetData.doAm,
                     targetData.doNghieng,
-                    targetData.thoiGianMua,
+                    numbertosend,
                     targetData.satLo
                 )
                 
