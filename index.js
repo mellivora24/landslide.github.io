@@ -25,16 +25,16 @@ function init() {
             data.forEach(item => {
                 showInList(item.name, item.updatedAt);
 
-                // var lat = parseFloat(item.kinhDo);
-                // var lng = parseFloat(item.viDo);
+                var lat = parseFloat(item.kinhDo);
+                var lng = parseFloat(item.viDo);
 
-                // var position = { lat, lng };
-                // marker = new google.maps.Marker({
-                //     position: position,
-                //     map: map,
-                //     icon: "source\\2.ico",
-                //     title: item.name
-                // });
+                var position = { lat, lng };
+                marker = new google.maps.Marker({
+                    position: position,
+                    map: map,
+                    icon: "source\\2.ico",
+                    title: item.name
+                });
             });
         })
         .catch(error => {
