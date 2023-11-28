@@ -98,6 +98,7 @@ function showInfor(name) {
             if (targetData) {
                 let number = parseFloat(targetData.thoiGianMua);
                 let numbertosend = number.toFixed(2);
+                console.log(numbertosend);
                 
                 displayInfor(targetData.name,
                     targetData.luongMua,
