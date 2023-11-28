@@ -65,6 +65,7 @@ function showInList(name, updatedAt) {
     div.classList.add('new-point');
     div.setAttribute('id', 'newPoint');
     div.setAttribute('name', name);
+    div.setAttribute('onclick', 'showInfor(\'' + name + '\')');
 
     let html =
         '<img src="https://www.shareicon.net/data/512x512/2016/08/04/806892_interface_512x512.png" alt="ico" id="map-point-icon">' +
