@@ -72,7 +72,7 @@ h1 {
 .point-list {
     display: flex;
     align-content: center;
-    height: 100%;
+    height: 65vh;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
