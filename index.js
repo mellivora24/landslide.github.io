@@ -25,7 +25,7 @@ function init() {
             data.forEach(item => {
                 showInList(item.name, item.updatedAt);
 
-                // var lat = parseFloat(item.kinhDo);
+                // var lat = parseFloat(item.kinh);
                 // var lng = parseFloat(item.viDo);
 
                 // var position = { lat, lng };
@@ -107,7 +107,7 @@ function showInfor(name) {
                     targetData.satLo
                 )
                 
-                var lat = parseFloat(targetData.kinhDo);
+                var lat = parseFloat(targetData.kinh);
                 var lng = parseFloat(targetData.viDo);
 
                 var position = { lat, lng };
@@ -128,7 +128,7 @@ function showInfor(name) {
                     });    
                 }
 
-                var latLng = new google.maps.LatLng(targetData.kinhDo, targetData.viDo);
+                var latLng = new google.maps.LatLng(targetData.kinh, targetData.viDo);
                 map.panTo(latLng);
             } else {
                 if (document.querySelector('table')) {
@@ -228,10 +228,10 @@ function addNewPoint() {
     document.getElementById('lng').value = ''
 }
 // Thêm điểm vào database
-function pushPointToDatabase(ten, kinhdo, vido) {
+function pushPointToDatabase(ten, kinh, vido) {
     const data = {
         name: ten,
-        kinhDo: kinhdo,
+        kinh: kinh,
         viDo: vido,
         doAm: '0',
         luongMua: '0',
