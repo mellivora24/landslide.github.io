@@ -1,7 +1,7 @@
 var map;
 var marker;
 
-const URLs = 'https://location-p9hs.onrender.com/home';
+const URLs = 'https://khkt-lc.onrender.com/home';
 
 /*------------------Load bản đồ và giao diện---------------------*/
 //Khởi tạo WEB
