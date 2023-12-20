@@ -109,6 +109,7 @@ function showInfor(name) {
             targetData.name,
             targetData.luongMua,
             targetData.doAm,
+            targetData.daAm1,
             targetData.doNghieng,
             targetData.thoiGianMua,
             targetData.satLo
@@ -144,7 +145,7 @@ function showInfor(name) {
         console.log("Không tìm thấy điểm nào có tên như vậy!");
     }
 }
-function displayInfor(name, luongmua, doam, donghieng, rain_time, satLo) {
+function displayInfor(name, luongmua, doam, doam1, donghieng, rain_time, satLo) {
     if (document.querySelector('table')) {
         removeTable();
     }
@@ -157,8 +158,12 @@ function displayInfor(name, luongmua, doam, donghieng, rain_time, satLo) {
         '<div id="table-title">Vị trí: ' + name + '</div>' +
         '<tbody>' +
         '<tr>' +
-        '<th id="hName" class="name">Độ ẩm:</th>' +
+        '<th id="hName" class="name">Độ ẩm 1:</th>' +
         '<th id="hValue" class="value">' + doam + '%</th>' +
+        '</tr>' +
+        '<tr>' +
+        '<th id="hName" class="name">Độ ẩm 2:</th>' +
+        '<th id="hValue" class="value">' + doam1 + '%</th>' +
         '</tr>' +
         '<tr>' +
         '<th id="rName" class="name">Lượng mưa:</th>' +
