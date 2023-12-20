@@ -109,7 +109,7 @@ function showInfor(name) {
             targetData.name,
             targetData.luongMua,
             targetData.doAm,
-            targetData.daAm1,
+            targetData.doAm_1,
             targetData.doNghieng,
             targetData.thoiGianMua,
             targetData.satLo
@@ -145,7 +145,7 @@ function showInfor(name) {
         console.log("Không tìm thấy điểm nào có tên như vậy!");
     }
 }
-function displayInfor(name, luongmua, doam, doam1, donghieng, rain_time, satLo) {
+function displayInfor(name, luongmua, doam, doam_1, donghieng, rain_time, satLo) {
     if (document.querySelector('table')) {
         removeTable();
     }
@@ -163,7 +163,7 @@ function displayInfor(name, luongmua, doam, doam1, donghieng, rain_time, satLo) 
         '</tr>' +
         '<tr>' +
         '<th id="hName" class="name">Độ ẩm 2:</th>' +
-        '<th id="hValue" class="value">' + doam1 + '%</th>' +
+        '<th id="hValue" class="value">' + doam_1 + '%</th>' +
         '</tr>' +
         '<tr>' +
         '<th id="rName" class="name">Lượng mưa:</th>' +
