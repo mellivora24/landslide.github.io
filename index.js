@@ -92,7 +92,6 @@ function showInList(name, updatedAt) {
         //onclick="deletePoint(this.parentNode,\'' + name + '\')
         html += '<button id="cancel-button-child-online"></button>';
         div.setAttribute('onclick', 'showInfor(\'' + name + '\')');
-        nameToShow = name;
     } else {
         html += '<button id="cancel-button-child-offline"></button>';
     }
@@ -102,6 +101,7 @@ function showInList(name, updatedAt) {
 }
 function showInfor(name) {
     // console.log(name);
+    nameToShow = name;
     const targetData = mainData.find(item => item.name === name);
 
     if (targetData) {
