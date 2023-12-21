@@ -202,9 +202,9 @@ function check(timeUpdate) {
     var dateObject = new Date(timeUpdate);
     var currentTime = new Date();
 
-    let time_in_second = currentTime.getSeconds() - dateObject.getSeconds();
+    let time_in_second = currentTime.getMinutes() - dateObject.getMinutes();
 
-    if (time_in_second < 0 || time_in_second > 40) return false;
+    if (time_in_second < 0 || time_in_second > 5) return false;
     else return true;
 }
 
